@@ -1,0 +1,33 @@
+{
+  "name": "StudyGroup",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify client/js/spa.js > public/bundle.js",
+    "watch-js": "watchify client/js/spa.js -o public/bundle.js -dv",
+    "build-css": "cat client/css/*.css > public/bundle.css",
+    "watch-css": "catw client/css/*.css -o public/bundle.css -v",
+    "build": "npm run build-js && npm run build-css",
+    "watch": "npm run watch-js && npm run watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshux/StudyGroup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshux/StudyGroup/issues"
+  },
+  "homepage": "https://github.com/joshux/StudyGroup",
+  "devDependencies": {
+    "browserify": "^10.1.3",
+    "catw": "^1.0.0",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.2.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
