@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "jquery": "^2.1.4",
-    "urianchor": "^1.2.1"
+    "urianchor": "^1.2.2"
   }
 }
